@@ -1,0 +1,35 @@
+.search-results {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-results h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.search-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-results li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f5f0;
+  border-radius: 5px;
+}
+
+.search-results a {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-results .result-type {
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}

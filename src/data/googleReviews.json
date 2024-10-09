@@ -1,0 +1,32 @@
+[
+  {
+    "author": "Actual Name 1",
+    "rating": 5,
+    "text": "Actual review text 1...",
+    "date": "2023-05-15"
+  },
+  {
+    "author": "Actual Name 2",
+    "rating": 5,
+    "text": "Actual review text 2...",
+    "date": "2023-05-10"
+  },
+  {
+    "author": "Actual Name 3",
+    "rating": 5,
+    "text": "Actual review text 3...",
+    "date": "2023-05-05"
+  },
+  {
+    "author": "Actual Name 4",
+    "rating": 4,
+    "text": "Actual review text 4...",
+    "date": "2023-04-30"
+  },
+  {
+    "author": "Actual Name 5",
+    "rating": 5,
+    "text": "Actual review text 5...",
+    "date": "2023-04-25"
+  }
+]

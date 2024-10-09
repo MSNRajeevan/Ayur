@@ -1,0 +1,188 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f0f0f0;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cta-card {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cta-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #2ecc71;
+}
+
+.cta-newsletter form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cta-newsletter input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card i {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.service-card p {
+  margin-bottom: 20px;
+}
+
+.service-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #2980b9;
+}
+
+.about-us, .patient-resources, .insurance-billing {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-card cite {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    flex-direction: column;
+  }
+  
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 1em;
+  }
+}
