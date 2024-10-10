@@ -8,7 +8,6 @@ import emailjs from 'emailjs-com';
 
 function AdminDashboard() {
   const [user, setUser] = useState(null);
-  const [appointments, setAppointments] = useState([]);
   const [subscribers, setSubscribers] = useState([]);
   const [newsletterContent, setNewsletterContent] = useState('');
   const [newSubscriber, setNewSubscriber] = useState('');
@@ -20,7 +19,6 @@ function AdminDashboard() {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user && user.email === 'roayur21@gmail.com') {
         setUser(user);
-        fetchAppointments();
         fetchSubscribers();
       } else {
         setUser(null);
@@ -30,12 +28,6 @@ function AdminDashboard() {
     return () => unsubscribe();
   }, []);
 
-  const fetchAppointments = async () => {
-    const appointmentsRef = collection(firestore, 'appointments');
-    const snapshot = await getDocs(appointmentsRef);
-    const appointmentList = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-    setAppointments(appointmentList);
-  };
 
   const fetchSubscribers = async () => {
     const subscribersRef = collection(firestore, 'subscribers');
@@ -116,19 +108,6 @@ function AdminDashboard() {
     <div className="admin-dashboard">
       <h1>Admin Dashboard</h1>
       <div className="dashboard-grid">
-        <div className="appointments-section">
-          <h2>Appointments</h2>
-          <Calendar
-            tileContent={({ date }) => {
-              const appointmentsForDay = appointments.filter(
-                app => new Date(app.date).toDateString() === date.toDateString()
-              );
-              return appointmentsForDay.length > 0 ? (
-                <p className="appointment-indicator">{appointmentsForDay.length}</p>
-              ) : null;
-            }}
-          />
-        </div>
         <div className="subscribers-section">
           <h2>Subscribers</h2>
           <div className="add-subscriber">

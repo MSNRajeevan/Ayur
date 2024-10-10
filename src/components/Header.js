@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 
 function Header({ cartItems, user, onLogout, isAdmin }) {
+  console.log('Header component is rendering');
+  
   const [showSearch, setShowSearch] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [showMobileMenu, setShowMobileMenu] = useState(false);

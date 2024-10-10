@@ -15,15 +15,15 @@ import AdminDashboard from './pages/AdminDashboard';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
 import LoginPage from './pages/LoginPage';
-import Appointments from './components/Appointments';
 import emailjs from 'emailjs-com';
 import SearchResults from './pages/SearchResults';
 import PatientResources from './pages/PatientResources';
 
 function App() {
+  console.log('App component is rendering');
+  
   const [cartItems, setCartItems] = useState([]);
   const [user, setUser] = useState(null);
-  const [appointments, setAppointments] = useState([]);
   const [redirectToHome, setRedirectToHome] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
 
@@ -32,15 +32,8 @@ function App() {
       setUser(currentUser);
       if (currentUser) {
         setIsAdmin(currentUser.email === 'roayur21@gmail.com');
-        // Fetch appointments for the logged-in user
-        // This is a placeholder. You'll need to implement the actual fetching logic.
-        setAppointments([
-          { date: '2023-06-01', service: 'Ayurvedic Consultation' },
-          { date: '2023-06-15', service: 'Panchakarma Therapy' },
-        ]);
       } else {
         setIsAdmin(false);
-        setAppointments([]);
       }
     });
 
@@ -87,15 +80,15 @@ function App() {
     `;
 
     emailjs.send(
-      'service_zi3y8hl',
-      'template_jg3qrbh',
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       {
         to_email: 'roayur21@gmail.com',
         from_name: name,
         from_email: email,
         message: emailContent,
       },
-      'j2i2dzxt_mv5JEf8G'
+      process.env.REACT_APP_EMAILJS_USER_ID
     )
     .then((response) => {
       console.log('Order placed successfully:', response);
@@ -115,7 +108,6 @@ function App() {
     try {
       await signOut(auth);
       setUser(null);
-      setAppointments([]);
       setRedirectToHome(true);
     } catch (error) {
       console.error('Error signing out:', error);
@@ -131,7 +123,6 @@ function App() {
     <Router>
       <div className="App">
         <Header cartItems={cartItems} user={user} onLogout={handleLogout} isAdmin={isAdmin} />
-        {user && <Appointments appointments={appointments} />}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

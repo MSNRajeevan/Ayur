@@ -7,8 +7,8 @@ function GoogleReviewsWidget() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const API_KEY = 'AIzaSyCxISRR14lGq1_34dlKZV7UT_RQGhoVP8g'; // Replace with your actual API key
-    const PLACE_ID = 'ChIJpT344MQhiYgRjhGf-gamNzA'; // Replace with your actual Place ID
+    const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+    const PLACE_ID = process.env.REACT_APP_GOOGLE_PLACE_ID;
 
     if (window.google && window.google.maps && window.google.maps.places) {
       initMap();
