@@ -88,7 +88,7 @@ function Booking() {
         </form>
       ) : (
         <InlineWidget
-          url="https://calendly.com/roayur21/ayur-appointment"
+          url="https://calendly.com/roayur21/ayur-appointment-1"
           prefill={{
             name: `${name} - ${serviceName || 'General Consultation'}`, // Combine name and service type
             email: email,
