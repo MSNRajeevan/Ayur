@@ -1,7 +1,10 @@
 import React from 'react';
 import './About.css';
-// TODO: Add an actual image of Dr. Rohini
-// import temporaryImage from '../assets/temporary-image.jpg';
+import drRohiniImage from '../assets/dr-rohini.jpg';
+import Aboutreasons from '../assets/Aboutreasons.jpg';
+import rohiniAyurvedicServices from '../assets/rohiniAyurvedicServices.jpeg';
+import whatisayurveda from '../assets/whatisayurveda.PNG';
+import telehealthservices from '../assets/telehealthservices.PNG';
 
 function About() {
   const abhyangaReasons = [
@@ -47,8 +50,7 @@ function About() {
             <p>Newly certified from...</p>
           </div>
           <div className="team-member-image">
-            {/* TODO: Add Dr. Rohini's photo here */}
-            {/* <img src={temporaryImage} alt="Dr. Rohini" /> */}
+            <img src={drRohiniImage} alt="Dr. Rohini" />
           </div>
         </div>
       </section>
@@ -57,6 +59,7 @@ function About() {
         <div className="left-column">
           <section className="card wellness-center">
             <h2>Rohini Ayurvedic Wellness Center</h2>
+            <img src={rohiniAyurvedicServices} alt="Rohini Ayurvedic Services Image" />
             <p>Rohini Ayurvedic Wellness Center (RAWC) will help you achieve a healthy and balanced life through herbal medications, ayurvedic oil therapies, detox procedures, lifestyle management and diet advice.</p>
             <p>Ayurveda aims at being both preventive and curative. Ayurvedic treatments help at developing and maintaining a healthy lifestyle by using five elements from nature to prevent/minimize acquiring various chronic medical illnesses. Ayurvedic treatments are highly individualized and consider body types like Vata, Pitta, and Kapha while developing a treatment plan.</p>
             <p>Ayurvedic pharmacology stresses heavily on using natural herbal medicines to alleviate distress from various chronic medical conditions.</p>
@@ -66,27 +69,30 @@ function About() {
         <div className="right-column">
           <section className="card telehealth">
             <h2>Telehealth Services</h2>
+            <img src={telehealthservices} alt="Telehealth Services Image" />
             <p>Sometimes there are obstacles to coming into a medical office, but help is still available. We can meet you over a HIPAA compliant connection. Same day appointments available!</p>
           </section>
 
           <section className="card ayurveda-intro">
             <h2>What is Ayurveda?</h2>
+            <img src={whatisayurveda} alt="What is Ayurveda Image" />
             <p>"Ayurveda" is the system designed to distinctly explain the merits and demerits, state of happiness or otherwise good and bad for life and the life itself within their parameters.</p>
           </section>
         </div>
       </div>
 
       <section className="abhyanga-reasons">
-        <h2>6 Reasons You Need Abhyanga This Winter</h2>
+    <h2>6 Reasons You Need Abhyanga This Winter</h2>
         <div className="reasons-grid">
           {abhyangaReasons.map((reason, index) => (
             <div key={index} className="reason-card">
               <h3>{reason.title}</h3>
-              <p>{reason.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+        <p>{reason.description}</p>
+      </div>
+        ))}
+      </div>
+      <img src={Aboutreasons} alt="About Reasons Image" />
+    </section>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
+import AyurLogoHeader from '../assets/AyurLogoHeader.PNG';
 
 function Header({ cartItems, user, onLogout, isAdmin }) {
   console.log('Header component is rendering');
@@ -31,6 +32,7 @@ function Header({ cartItems, user, onLogout, isAdmin }) {
     <header className="header">
       <div className="header-container">
         <div className="logo">
+          <img src={AyurLogoHeader} alt="Logo" />
           <Link to="/">AyuR</Link>
         </div>
         <div className="hamburger-menu" onClick={toggleMobileMenu}>

@@ -6,6 +6,56 @@ header {
   z-index: 1000;
 }
 
+/* Flexbox container for logo and title */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image styling */
+.logo img {
+  max-width: 100%;    /* Ensure it never exceeds its container */
+  width: 50px;        /* Set an initial width */
+  height: auto;       /* Let height adjust based on width to keep aspect ratio */
+  margin-right: 10px; /* Space between the logo and the text */
+}
+
+/* Logo and text size for different screen sizes */
+@media (min-width: 768px) {
+  /* For tablets and above */
+  .logo img {
+    width: 70px;
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Adjust size of "AyuR" */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For larger screens like desktops */
+  .logo img {
+    width: 90px;
+  }
+
+  .logo a {
+    font-size: 2rem; /* Match "AyuR" title size to logo size */
+  }
+}
+
+/* Adjust for smaller mobile devices */
+@media (max-width: 767px) {
+  /* For small phones */
+  .logo img {
+    width: 40px;
+  }
+
+  .logo a {
+    font-size: 1.2rem; /* Make "AyuR" smaller */
+  }
+}
+
+
 .header-container {
   max-width: 1200px;
   margin: 0 auto;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import footerayur from '../assets/footerayur.PNG';
 
 function Footer() {
   return (
@@ -8,6 +9,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3>Rohini Ayurveda</h3>
+          <img src={footerayur} alt="Ayur Footer Image" />
           <p>Bringing ancient wisdom to modern wellness</p>
           <div className="social-links">
             <a href="https://www.facebook.com/people/Rohiniayurcom/100075990648571/" target="_blank" rel="noopener noreferrer" className="social-icon">

@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import { collection, addDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 import './Home.css';
+import hometitle from '../assets/Hometitle.PNG';
+import ayurvedicconcepts from '../assets/ayurvedicconcepts.jpg';
+import meetourteam from '../assets/meetourteam.HEIC';
+import patientresources from '../assets/patientresources.jpg';
+
 
 
 function Home() {
@@ -35,12 +40,14 @@ function Home() {
   return (
     <div className="home">
       <section className="hero">
+        <img src={hometitle} alt="Home Title Image" />
         <h1>Welcome to Rohini Ayurvedic Wellness Center Health Clinic</h1>
         <p>Discover the ancient wisdom of Ayurveda for holistic well-being</p>
       </section>
 
       <section className="intro">
         <h2>Embrace the Wisdom of Ayurveda</h2>
+        <img src={ayurvedicconcepts} alt="Ayurvedic Concepts Image" />
         <p>
           At Rohini Ayurvedic Wellness Center Health Clinic, we offer a range of services to help you maintain your health and well-being. From preventative care to chronic disease management, our team of healthcare professionals is here for you every step of the way.
         </p>
@@ -86,17 +93,19 @@ function Home() {
 
       <section className="about-us">
         <h2>Meet Our Team</h2>
+        <img src={meetourteam} alt="Dr. Rohini Image" />
         <p>Our team is made up of highly skilled and compassionate healthcare professionals who are dedicated to providing you with the best possible care. Get to know our team and learn more about their areas of expertise.</p>
         <Link to="/about" className="cta-button">Learn More About Our Practice</Link>
       </section>
 
-      <section className="testimonials">
+      {/* <section className="testimonials">
         <h2>What Our Clients Say</h2>
         <GoogleReviewsWidget />
-      </section>
+      </section> */}
 
       <section className="patient-resources">
         <h2>Patient Resources</h2>
+        <img src={patientresources} alt="Patient Resources Image" />
         <p>We believe that healthcare is a partnership between patients and providers. That's why we offer a range of resources to help you stay informed and engaged in your care, including educational materials and online tools.</p>
         <Link to="/resources" className="cta-button">Explore Patient Resources</Link>
       </section>
@@ -107,7 +116,7 @@ function Home() {
         <Link to="/insurance" className="cta-button">Learn More About Billing</Link>
       </section>
 
-      <GoogleReviewsWidget />
+      {/* <GoogleReviewsWidget /> */}
 
     </div>
   );

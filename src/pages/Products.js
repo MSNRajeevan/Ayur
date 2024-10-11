@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import './Products.css';
+import ayurherb from '../assets/ayurherb.jpeg';
+import ayurskincare from '../assets/ayurskincare.JPG';
+import triphala from '../assets/triphala.jpeg';
+import imherb from '../assets/IMherb.jpg';
+
 
 const products = [
-  { id: 1, name: 'Ayur Herb', price: 10, category: 'Herbal Products', image: 'https://via.placeholder.com/150?text=Ayur+Herb' },
-  { id: 2, name: 'Ayur Skin Care', price: 15, category: 'Herbal Products', image: 'https://via.placeholder.com/150?text=Ayur+Skin+Care' },
-  { id: 3, name: 'Triphala powder/Tab/Cap', price: 12, category: 'Supplements', image: 'https://via.placeholder.com/150?text=Triphala' },
-  { id: 4, name: 'I M herb', price: 15, category: 'Supplements', image: 'https://via.placeholder.com/150?text=I+M+herb' },
+  { id: 1, name: 'Ayur Herb', price: 10, category: 'Herbal Products', image: ayurherb },
+  { id: 2, name: 'Ayur Skin Care', price: 15, category: 'Herbal Products', image: ayurskincare },
+  { id: 3, name: 'Triphala powder/Tab/Cap', price: 12, category: 'Supplements', image: triphala },
+  { id: 4, name: 'I M herb', price: 15, category: 'Supplements', image:  imherb},
 ];
 
 function Products({ addToCart }) {
