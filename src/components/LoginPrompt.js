@@ -11,7 +11,7 @@ function LoginPrompt({ onLogin, onForgotPassword }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Clear any previous errors
+    setError('');
     try {
       if (isSignUp) {
         await createUserWithEmailAndPassword(auth, email, password);

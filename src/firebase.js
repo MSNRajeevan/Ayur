@@ -11,8 +11,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
-console.log('Test variable:', process.env.REACT_APP_TEST_VARIABLE);
-console.log('Firebase Config:', firebaseConfig); // Add this line for debugging
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);

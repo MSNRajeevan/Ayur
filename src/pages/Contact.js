@@ -28,11 +28,9 @@ function Contact() {
       'j2i2dzxt_mv5JEf8G'
     )
     .then((response) => {
-      console.log('Email sent successfully:', response);
       alert('Your message has been sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     }, (error) => {
-      console.error('Failed to send email:', error);
       alert('Failed to send message. Please try again later.');
     });
   };

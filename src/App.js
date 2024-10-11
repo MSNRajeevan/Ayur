@@ -91,11 +91,9 @@ function App() {
       process.env.REACT_APP_EMAILJS_USER_ID
     )
     .then((response) => {
-      console.log('Order placed successfully:', response);
       alert('Your order has been placed successfully!');
       setCartItems([]); // Clear the cart after successful order
     }, (error) => {
-      console.error('Failed to place order:', error);
       alert('Failed to place order. Please try again later.');
     });
   };

@@ -5,7 +5,6 @@ import { collection, addDoc } from 'firebase/firestore';
 import { firestore } from '../firebase';
 import './Home.css';
 
-console.log('Firestore instance:', firestore);
 
 function Home() {
   const [email, setEmail] = useState('');
@@ -17,11 +16,9 @@ function Home() {
         email,
         subscriptionDate: new Date()
       });
-      console.log("Document written with ID: ", docRef.id);
       alert('Thank you for subscribing to our newsletter!');
       setEmail('');
     } catch (error) {
-      console.error('Error adding subscriber: ', error);
       alert(`Failed to subscribe. Error: ${error.message}`);
     }
   };
