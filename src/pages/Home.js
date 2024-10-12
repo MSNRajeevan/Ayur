@@ -8,6 +8,8 @@ import hometitle from '../assets/Hometitle.PNG';
 import ayurvedicconcepts from '../assets/ayurvedicconcepts.jpg';
 import meetourteam from '../assets/meetourteam.HEIC';
 import patientresources from '../assets/patientresources.jpg';
+import ayurvedam from '../assets/ayurvedam.PNG';
+
 
 
 
@@ -41,6 +43,7 @@ function Home() {
     <div className="home">
       <section className="hero">
         <img src={hometitle} alt="Home Title Image" />
+        <img src={ayurvedam} alt="Ayurvedam Image" />
         <h1>Welcome to Rohini Ayurvedic Wellness Center Health Clinic</h1>
         <p>Discover the ancient wisdom of Ayurveda for holistic well-being</p>
       </section>

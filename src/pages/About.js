@@ -5,6 +5,7 @@ import Aboutreasons from '../assets/Aboutreasons.jpg';
 import rohiniAyurvedicServices from '../assets/rohiniAyurvedicServices.jpeg';
 import whatisayurveda from '../assets/whatisayurveda.PNG';
 import telehealthservices from '../assets/telehealthservices.PNG';
+import drRohiniImage2 from '../assets/drrohini2.jpeg';
 
 function About() {
   const abhyangaReasons = [
@@ -37,23 +38,48 @@ function About() {
   return (
     <div className="about">
       <h1>About Rohini Ayurvedic Wellness Center Health Clinic</h1>
-      
+
       <section className="card team-section">
         <h2>The Team</h2>
         <div className="team-member">
           <div className="team-member-info">
             <h3>Dr. Rohini</h3>
-            <p>Our Vaidya Rohini is a seasoned Ayurveda practitioner with over 25 years of experience in the field. She holds a Bachelors in Ayurveda Medicine and Surgery (BAMS) from the prestigious TMAE college in India.</p>
-            <p>After completing six rigorous training years in college, she joined her father Dr. PB PL N Annathacharyulu, BAMS, Retd. Assistant Professor – Rasa Sastra (Ayurvedic Pharmacology) at NRS Ayurvedic Medical College, Vijaywada, India. She trained under the able tutelage of her father and her first guru for several years.</p>
-            <p>She has performed various surgeries and is well versed in allopathic treatment modalities too. As a result, her ayurvedic practice rests on treatments that do not interfere/interact with other treatment modalities.</p>
-            <p>All her years of learning and practicing Ayurveda has made her a strong proponent and a staunch believer in the phrase – HEAL WITH NATURE. She aspires to dedicate her professional life in furthering this cause.</p>
-            <p>Newly certified from...</p>
+            <p>With over 25 years of dedicated experience in Ayurveda, Vaidya Rohini is a seasoned practitioner committed to holistic healing. She earned her Bachelor’s in Ayurveda Medicine and Surgery (BAMS) from the prestigious TMAE College in India, where she underwent six rigorous years of training.</p>
+            <p>Following her education, Vaidya Rohini trained under the guidance of her father, Dr. PB PL N Annathacharyulu, a retired Assistant Professor of Rasa Sastra (Ayurvedic Pharmacology) at NRS Ayurvedic Medical College in Vijayawada, India.</p>
+            <p>This mentorship shaped her understanding of Ayurvedic principles and practices, allowing her to integrate traditional knowledge with modern healing techniques.</p>
+            <p>Vaidya Rohini is proficient in a variety of treatment modalities, having performed numerous surgeries and developed a strong foundation in allopathic treatments. This unique combination allows her to provide comprehensive care that respects the integrity of both Ayurvedic and modern medicine, ensuring that her treatments do not interfere or interact negatively with other medical approaches.</p>
+            <p>A staunch believer in the philosophy of “Heal with Nature,” Vaidya Rohini is passionate about using natural remedies to promote health and well-being. She is committed to furthering this cause throughout her professional journey.</p>
+            <p>Additionally, she has received certification from the National Ayurvedic Medical Association and the AAPNA (Association of Ayurveda Professionals of North America). Vaidya Rohini also completed a 200-hour Yoga Teacher Training program, which enhances her ability to provide holistic care to her clients.</p>
+            <p>Explore the healing power of Ayurveda with Vaidya Rohini and experience a journey towards balance and wellness.</p>
+          </div>
+          <div className="team-member-image">
+            <img src={drRohiniImage} alt="Dr. Rohini" />
+            <img src={drRohiniImage2} alt="Dr. Rohini" />
+          </div>
+        </div>
+      </section>
+      
+      {/* <section className="card team-section">
+        <h2>The Team</h2>
+        <div className="team-member">
+          <div className="team-member-info">
+            <h3>Dr. Rohini</h3>
+            <p>With over 25 years of dedicated experience in Ayurveda, Vaidya Rohini is a seasoned practitioner committed to holistic healing. She earned her Bachelor’s in Ayurveda Medicine and Surgery (BAMS) from the prestigious TMAE College in India, where she underwent six rigorous years of training.</p>
+            <p>Following her education, Vaidya Rohini trained under the guidance of her father, Dr. PB PL N Annathacharyulu, a retired Assistant Professor of Rasa Sastra (Ayurvedic Pharmacology) at NRS Ayurvedic Medical College in Vijayawada, India.</p>
+            <p>This mentorship shaped her understanding of Ayurvedic principles and practices, allowing her to integrate traditional knowledge with modern healing techniques.</p>
+            <p>Vaidya Rohini is proficient in a variety of treatment modalities, having performed numerous surgeries and developed a strong foundation in allopathic treatments. This unique combination allows her to provide comprehensive care that respects the integrity of both Ayurvedic and modern medicine, ensuring that her treatments do not interfere or interact negatively with other medical approaches.</p>
+            <p>A staunch believer in the philosophy of “Heal with Nature,” Vaidya Rohini is passionate about using natural remedies to promote health and well-being. She is committed to furthering this cause throughout her professional journey.</p>
+            <p>Additionally, she has received certification from the National Ayurvedic Medical Association and the AAPNA (Association of Ayurveda Professionals of North America). Vaidya Rohini also completed a 200-hour Yoga Teacher Training program, which enhances her ability to provide holistic care to her clients.</p>
+            <p>Explore the healing power of Ayurveda with Vaidya Rohini and experience a journey towards balance and wellness.</p>
           </div>
           <div className="team-member-image">
             <img src={drRohiniImage} alt="Dr. Rohini" />
           </div>
+          <div className="team-member-image">
+            <img src={drRohiniImage2} alt="Dr. Rohini" />
+          </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="info-section">
         <div className="left-column">
