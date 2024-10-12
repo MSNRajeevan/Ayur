@@ -9,15 +9,12 @@ function SearchResults() {
 
   useEffect(() => {
     if (searchQuery) {
-      // Perform the search
       const searchResults = performSearch(searchQuery);
       setResults(searchResults);
     }
   }, [searchQuery]);
 
   const performSearch = (query) => {
-    // This is where you'd implement your actual search logic
-    // For now, we'll use a mock search function
     const allContent = [
       { type: 'service', title: 'Ayurvedic Consultation', url: '/services#ayurvedic-consultation' },
       { type: 'service', title: 'Panchakarma Therapy', url: '/services#panchakarma' },

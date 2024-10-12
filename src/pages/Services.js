@@ -122,36 +122,6 @@ const serviceCategories = [
   }
 ];
 
-// function Services() {
-//   return (
-//     <div className="services">
-//       <h1>Our Services</h1>
-//       {serviceCategories.map((category, index) => (
-//         <div key={index} className="service-category">
-//           <h2>{category.category}</h2>
-//           <div className="service-grid">
-//             {category.services.map((service) => (
-//               <div key={service.id} className="card">
-//                 <div className="card-content">
-//                   <h3>{service.title}</h3>
-//                   <p className="service-details">
-//                     <span>{service.duration}</span> | <span>{service.price}</span>
-//                   </p>
-//                   <p className="service-description">{service.description}</p>
-//                 </div>
-//                 <div className="card-footer">
-//                   <Link to={`/booking/${service.id}`} className="button">
-//                     Book Appointment
-//                   </Link>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
 
 function Services() {
   return (

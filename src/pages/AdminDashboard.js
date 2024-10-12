@@ -73,8 +73,7 @@ function AdminDashboard() {
             'template_9twhe58',
             {
               to_email: subscriber.email,
-              newsletter_url: newsletterUrl, // Use the URL instead of content
-              // You can add more template variables here if needed
+              newsletter_url: newsletterUrl,
             },
             'j2i2dzxt_mv5JEf8G'
           );

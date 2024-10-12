@@ -15,10 +15,10 @@
 .abhyanga-reasons img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Change this to 'contain' to ensure the whole image is visible */
+  object-fit: contain;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  max-height: 400px; /* You can increase this if necessary, based on the image aspect ratio */
+  max-height: 400px;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,64 +106,39 @@
 
 .team-member {
   display: flex;
-  justify-content: space-between; /* Align text and images side by side */
-  align-items: flex-start; /* Align items to the top */
-  flex-wrap: wrap; /* For responsiveness, allow items to wrap */
-  gap: 20px; /* Space between the text and image sections */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .team-member-info {
-  flex: 1; /* Takes up remaining space on the left */
+  flex: 1;
   margin-right: 20px;
 }
 
 .team-member-image {
   display: flex;
-  flex-direction: column; /* Stack images vertically */
-  align-items: center; /* Center images horizontally */
-  flex: 0 1 300px; /* The image container takes up fixed width */
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 300px;
 }
 
 .team-member-image img {
-  width: 100%; /* Ensure the images take up full container width */
-  margin-bottom: 20px; /* Space between the two images */
-  border-radius: 10px; /* Optional: Rounded corners */
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
   .team-member {
-    flex-direction: column; /* Stack everything vertically on smaller screens */
+    flex-direction: column;
   }
 
   .team-member-image {
     flex: 1;
   }
 }
-
-
-/* .team-member {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  align-items: center;
-  align-items: flex-start;
-}
-
-.team-member-info {
-  flex: 2;
-  margin-bottom: 20px;
-}
-
-.team-member-image {
-  flex: 1;
-}
-
-.team-member-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-} */
 
 .info-section {
   display: flex;

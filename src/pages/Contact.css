@@ -195,7 +195,7 @@
   align-items: center;
   justify-content: center;
   background-color: #27ae60;
-  color: white !important; /* Force white color and override any inherited styles */
+  color: white !important;
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -209,7 +209,7 @@
 
 .directions-button:hover {
   background-color: #2ecc71;
-  color: white !important; /* Ensure text remains white on hover */
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(39, 174, 96, 0.4);
 }
@@ -221,7 +221,7 @@
 
 .directions-button i {
   margin-right: 8px;
-  color: white; /* Ensure icon color is white */
+  color: white;
 }
 
 @media (max-width: 768px) {

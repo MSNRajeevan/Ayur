@@ -20,7 +20,6 @@ function GoogleReviewsWidget() {
         }
       }, 100);
 
-      // Clear interval after 10 seconds if Google Maps doesn't load
       setTimeout(() => {
         clearInterval(checkGoogleMaps);
         if (!window.google || !window.google.maps || !window.google.maps.places) {

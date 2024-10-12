@@ -4,7 +4,6 @@ import './Blog.css';
 const RSS_TO_JSON_API = "https://api.rss2json.com/v1/api.json?rss_url=";
 const BLOG_RSS_URL = "https://rohiniayur.blogspot.com/feeds/posts/default?alt=rss";
 
-// Fallback image URL
 const FALLBACK_IMAGE = "https://via.placeholder.com/300x200?text=Ayurveda+Blog";
 
 function Blog() {
@@ -27,12 +26,10 @@ function Blog() {
             link: item.link,
             pubDate: item.pubDate,
             content: item.description,
-            image: FALLBACK_IMAGE, // Use fallback image initially
+            image: FALLBACK_IMAGE,
           }));
 
           setPosts(parsedPosts);
-
-          // Fetch images after setting initial posts
           fetchImages(parsedPosts);
         } else {
           throw new Error('Failed to fetch RSS feed');
@@ -57,7 +54,6 @@ function Blog() {
       setPosts(updatedPosts);
     } catch (error) {
       console.error('Error fetching images:', error);
-      // If there's an error, we'll keep the fallback images
     }
   }
 

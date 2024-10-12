@@ -21,7 +21,6 @@ function GoogleReviews() {
     reviewsData[(currentIndex + 2) % reviewsData.length],
   ];
 
-  // Calculate overall rating
   const overallRating = (reviewsData.reduce((sum, review) => sum + review.rating, 0) / reviewsData.length).toFixed(1);
 
   return (

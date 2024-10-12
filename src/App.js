@@ -92,7 +92,7 @@ function App() {
     )
     .then((response) => {
       alert('Your order has been placed successfully!');
-      setCartItems([]); // Clear the cart after successful order
+      setCartItems([]);
     }, (error) => {
       alert('Failed to place order. Please try again later.');
     });

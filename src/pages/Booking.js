@@ -9,7 +9,7 @@ function Booking() {
   const [phone, setPhone] = useState('');
   const [healthCondition, setHealthCondition] = useState('');
   const [showCalendly, setShowCalendly] = useState(false);
-  const { serviceType } = useParams(); // Get the serviceType from URL params
+  const { serviceType } = useParams();
   const [serviceName, setServiceName] = useState('');
 
   const getServiceName = (serviceType) => {
@@ -90,7 +90,7 @@ function Booking() {
         <InlineWidget
           url="https://calendly.com/roayur21/ayur-appointment-1"
           prefill={{
-            name: `${name} - ${serviceName || 'General Consultation'}`, // Combine name and service type
+            name: `${name} - ${serviceName || 'General Consultation'}`,
             email: email,
             customAnswers: {
               a1: phone,
