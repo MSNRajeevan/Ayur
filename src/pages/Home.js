@@ -114,8 +114,8 @@ function Home() {
       </section>
 
       <section className="insurance-billing">
-        <h2>Insurance and Billing</h2>
-        <p>We accept most major insurance plans and offer a range of payment options to make your healthcare experience as seamless as possible.</p>
+        <h2>Billing</h2>
+        <p>We offer a range of payment options to make your healthcare experience as seamless as possible.</p>
         <Link to="/insurance" className="cta-button">Learn More About Billing</Link>
       </section>
 

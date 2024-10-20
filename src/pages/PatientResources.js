@@ -15,8 +15,8 @@ function PatientResources() {
         </section>
 
         <section className="insurance-billing">
-          <h2>Insurance and Billing</h2>
-          <p>We accept most major insurance plans and offer a range of payment options to make your healthcare experience as seamless as possible.</p>
+          <h2>Billing</h2>
+          <p>We offer a range of payment options to make your healthcare experience as seamless as possible.</p>
           <p>If you have any questions about our services or billing, please don't hesitate to reach out to us.</p>
           <Link to="/contact" className="contact-button">Contact Us</Link>
         </section>
